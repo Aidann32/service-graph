@@ -18,6 +18,12 @@ class Node:
 
 
 @dataclass
+class Relation:
+    fromService: Node
+    toService: Node
+
+
+@dataclass
 class Graph:
     name: str
-    relations: list[tuple[Node, Node]]
+    relations: list[Relation]
