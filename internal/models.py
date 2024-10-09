@@ -10,11 +10,18 @@ class NodeType(Enum):
     SERVICE = "service"
 
 
+class NodeLayer(Enum):
+    INTEGRATION = "integration"
+    CORE = "core"
+    GATEWAY = "gateway"
+
+
 @dataclass
 class Node:
     name: str
     type: NodeType
     description: str
+    layer: NodeLayer
 
 
 @dataclass
