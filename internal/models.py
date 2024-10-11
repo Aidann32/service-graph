@@ -26,8 +26,8 @@ class Node:
 
 @dataclass
 class Relation:
-    fromService: Node
-    toService: Node
+    source: Node
+    destination: Node
 
 
 @dataclass
