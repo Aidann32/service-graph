@@ -29,5 +29,5 @@ def parse_all_files(root_path: str) -> list[dict]:
 
 
 def create_graph(configs: list[dict]) -> models.Graph:
-    pass
-
+    for config in configs:
+        pass
